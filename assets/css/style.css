@@ -1,69 +1,79 @@
 html, body {
-    margin: 0;
-    font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
 }
 
 body {
-    background: black;
-    color: #f7f7f7;
+  background: black;
+  color: #f7f7f7;
 }
 
 a {
-    color: inherit;
-    text-decoration: underline;
-    transition: color 0.25s ease;
+  color: white;
+  text-decoration: underline;
+  transition: color 0.25s ease;
 }
 
 a:active {
-    color: inherit;
+  color: white;
 }
 
 a:hover {
-    color: white;
+  color: white;
 }
 
 .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 80px 80px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 5rem 2rem;
 }
 
 .face img {
-    border-radius: 50%;
-    width: 256px;
-    height: 256px;
-    border: 3px solid white;
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  border: 3px solid white;
 }
 
 .info {
-    padding: 30px 0;
-    text-align: center;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .info .hi {
-    font-size: 36px;
-    margin-bottom: 15px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .info .who {
-    font-size: 24px;
+  font-size: 1.25rem;
 }
 
 .social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .social .button {
-    border-radius: 50%;
-    margin: auto auto;  
+  border-radius: 50%;
+  padding: 0.75rem;
+  background-color: transparent;
+  transition: background-color 0.25s ease;
 }
+
+.social .button:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
 .social .button:hover {
-    background: grey;
+  background-color: grey;
 }
+
 .social .button img {
-    width: 32px;
-    height: 32px;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(2px);
 }
